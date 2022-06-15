@@ -6,10 +6,19 @@ canvas.width = 800;
 canvas.height = 600;
 
 let score = 0;
+
 let x = 100;
 let y = 100;
 let radius = 10;
 let speed = 10;
+
+let xE1 = canvas.width / 2;
+let yE1 = canvas.height / 2;
+let radiusE1 = 25;
+let speedE1 = 15;
+
+let canMoveUpE1 = true;
+let canMoveDownE1 = false;
 
 document.getElementById('radius').innerHTML = radius;
 
@@ -39,15 +48,18 @@ function gameLoop() {
     borderChecker();
     detectEatingFood();
     drawBlob();
+    moveEnnemy1();
+    isEnnemyCollidePlayer();
+    drawEnnemy1();
 }
 
 function detectEatingFood() {
     if (foodAlreadySpawned) {
-        if ((x  >= randomX && x <= randomX + foodWidth)
+        if ((x >= randomX && x <= randomX + foodWidth)
             && (y >= randomY && y <= randomY + foodHeight)) {
             randomX = Math.random() * canvas.width / 1.5;
             randomY = Math.random() * canvas.height / 1.5;
-            radius += 0.5
+            radius += 0.5;
             score += 5;
             document.getElementById('score').innerHTML = score;
             document.getElementById('radius').innerHTML = radius;
@@ -56,15 +68,15 @@ function detectEatingFood() {
 }
 
 function borderChecker() {
-    if (y < radius - (radius / 2)) {
-        y = radius - (radius / 2);
-    } else if (y > canvas.height - (radius - (radius / 2))) {
-        y = canvas.height - (radius - (radius / 2));
+    if (y < radius) {
+        y = radius;
+    } else if (y > canvas.height - radius) {
+        y = canvas.height - radius;
     }
-    if (x < radius - (radius / 2)) {
-        x = radius - (radius / 2);
-    } else if (x > canvas.width - (radius - (radius / 2))) {
-        x = canvas.width - (radius - (radius / 2));
+    if (x < radius) {
+        x = radius;
+    } else if (x > canvas.width - radius) {
+        x = canvas.width - radius;
     }
 }
 
@@ -79,6 +91,38 @@ function spawnFood() {
 
 function drawBackground() {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+}
+
+function isEnnemyCollidePlayer() {
+    if ((x >= xE1 && x <= xE1 + radiusE1 / 2)
+        && (y >= yE1 && y <= yE1 + radiusE1 / 2)) {
+            radius -= 5;
+            document.getElementById('radius').innerHTML = radius;
+        }
+}
+
+function moveEnnemy1() {
+    if (yE1 > 0 && canMoveUpE1 == true && canMoveDownE1 == false) {
+        yE1 -= speedE1;
+        if (yE1 <= 0) {
+            canMoveUpE1 = false;
+            canMoveDownE1 = true;
+        }
+    }
+    if (yE1 < canvas.height && canMoveDownE1 == true && canMoveUpE1 == false) {
+        yE1 += speedE1;
+        if (yE1 >= canvas.height) {
+            canMoveDownE1 = false;
+            canMoveUpE1 = true;
+        }
+    }
+}
+
+function drawEnnemy1() {
+    ctx.fillStyle = "red";
+    ctx.beginPath();
+    ctx.arc(xE1, yE1, radiusE1, 0, Math.PI * 2);
+    ctx.fill();
 }
 
 function drawBlob() {
