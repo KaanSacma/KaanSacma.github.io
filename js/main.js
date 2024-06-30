@@ -42,6 +42,7 @@ function updateTheme()
         changeTheme(theme);
     } else {
         localStorage.setItem("theme", "dark");
+        changeTheme("dark");
     }
 }
 
@@ -65,27 +66,22 @@ function changeStateTopBar(state)
     }
 }
 
-function hover(element, src)
+function hover(element)
 {
-    element.setAttribute('src', src);
+    element.className = element.className + ' filter-orange';
 }
 
-function unhover(element, src)
+function unhover(element)
 {
-    element.setAttribute('src', src);
+    if (element.className.includes('filter-orange')) {
+        element.className = element.className.replace('filter-orange', '');
+    }
+    //element.setAttribute('src', src);
 }
 
 function redirectLink(link)
 {
     window.open(link, '_blank');
-}
-
-function debounce(callback, delay) {
-    let timer;
-    return function () {
-        clearTimeout(timer);
-        timer = setTimeout(callback, delay);
-    };
 }
 
 function scrollToId(id) {
@@ -125,6 +121,17 @@ function displayLangChoice()
     }
 }
 
+function changeIconsColor(theme)
+{
+    if (theme === 'dark') {
+        const icons = document.querySelectorAll('.filter-black');
+        icons.forEach(icon => icon.className = icon.className.replace('filter-black', 'filter-white'));
+    } else if (theme === 'light') {
+        const icons = document.querySelectorAll('.filter-white');
+        icons.forEach(icon => icon.className = icon.className.replace('filter-white', 'filter-black'));
+    }
+}
+
 function changeTheme(theme)
 {
     if (theme === 'dark') {
@@ -138,4 +145,5 @@ function changeTheme(theme)
         html.setAttribute('data-theme', 'light');
         localStorage.setItem("theme", "light");
     }
+    changeIconsColor(theme);
 }

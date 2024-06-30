@@ -50,7 +50,8 @@
 }
 
 .nav-social-icon {
-    max-width: 40px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -68,10 +69,11 @@
 }
 
 .nav-theme-icon {
-    max-width: 40px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
-.nav-theme-icon .moon {
+.nav-theme-icon .moon, .sun {
     display: none;
 }
