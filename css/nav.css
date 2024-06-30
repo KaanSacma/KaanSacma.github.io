@@ -1,0 +1,77 @@
+.nav-top-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 900px;
+    width: var(--max-window-width);
+    height: 60px;
+    background-color: var(--card-color);
+    border-radius: 5px;
+}
+
+.nav-logo {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-logo:hover {
+    color: var(--orange-color);
+}
+
+.nav-btn {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: var(--orange-color);
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    margin-right: 10px;
+}
+
+.nav-social-icon {
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.nav-social-icon:first-child {
+    margin-right: 10px;
+}
+
+.nav-theme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.nav-theme-icon {
+    max-width: 40px;
+    cursor: pointer;
+}
+
+.nav-theme-icon .moon {
+    display: none;
+}

@@ -1,0 +1,88 @@
+#contact {
+    margin-top: 300px;
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: var(--card-color);
+}
+
+#contact-form p {
+    margin-top: 10px;
+}
+
+.contact-label {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+}
+
+.contact-label:first-child {
+    margin-top: 0;
+}
+
+.contact-label > input, textarea {
+    display: block;
+    margin: 20px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-family: var(--main-font), serif;
+
+    &:hover {
+        border-bottom: 5px solid var(--orange-color);
+        transition: ease 0.3s;
+    }
+}
+
+.contact-label > textarea {
+    height: 12em;
+    resize: unset;
+    overflow: hidden;
+}
+
+#submit {
+    min-width: 300px;
+    height: 40px;
+    color: var(--text-color);
+    background-color: var(--card-btn-color);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: unset;
+}
+
+#submit:hover {
+    background-color: var(--orange-color);
+    color: var(--text-label-color);
+    cursor: pointer;
+}
+
+.contact-success {
+    color: green;
+    font-weight: bold;
+}
+
+.contact-error {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,129 @@
+#experience {
+    margin-top: 300px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.experience-timeline {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.experience-timeline-date-right {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.experience-timeline-date-left {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.experience-timeline-middle {
+    position: relative;
+    background-color: var(--card-color);
+    width: 3px;
+    height: 100%;
+}
+
+.experience-timeline-content {
+    position: relative;
+    background: var(--card-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 20px;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem 1rem 20px;
+    text-align: left;
+}
+
+.experience-timeline-icon {
+    position: absolute;
+    width: 50px;
+    left: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+.experience-timeline-icon:hover {
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.experience-timeline-company {
+    font-size: 24px;
+    margin-left: 73px;
+}
+
+.experience-timeline-role {
+    margin-left: 73px;
+}
+
+.experience-timeline-task {
+    margin-top: 23px;
+    margin-left: 20px;
+}
+
+.experience-timeline-component {
+    margin: 0 20px 20px 20px;
+}
+
+.experience-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 23px;
+    text-align: center;
+}
+
+.experience-label {
+    background-color: var(--orange-color);
+    color: var(--text-label-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+
+.experience-label:last-child {
+    margin-right: 0;
+}
+
+.experience-timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*
+@media screen and (min-width: 768px) {
+    .timeline {
+    }
+    .timeline-middle {
+    }
+    .main-middle {
+    }
+    .timeline-circle {
+    }
+}
+*/

@@ -1,366 +1,438 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="TemplateMo">
-        <title>Kaan Saçma</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/magnific-popup.css" rel="stylesheet">
-        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <section class="preloader">
-            <div class="spinner">
-                <span class="spinner-rotate"></span>
+    <title>Kaan Saçma</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sections/home.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/experience.css">
+    <link rel="stylesheet" href="css/sections/work.css">
+    <link rel="stylesheet" href="css/sections/skills.css">
+    <link rel="stylesheet" href="css/sections/contact.css">
+
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <nav class="nav-top-bar">
+        <div class="nav-container">
+            <a class="nav-logo" onclick="scrollToId('home')">KS</a>
+            <div class="nav-buttons">
+                <a class="nav-btn" onclick="scrollToId('about')">About</a>
+                <a class="nav-btn" onclick="scrollToId('experience')">Experience</a>
+                <a class="nav-btn" onclick="scrollToId('work')">Work</a>
+                <a class="nav-btn" onclick="scrollToId('skills')">Skills</a>
+                <a class="nav-btn" onclick="scrollToId('contact')">Contact</a>
+            </div>
+            <div class="nav-social">
+                <img class="nav-social-icon" src="images/icons/socials/github-icon.png" onclick="redirectLink('https://github.com/KaanSacma')" onmouseover="hover(this, 'images/icons/socials/github-icon-orange.png');" onmouseout="unhover(this, 'images/icons/socials/github-icon.png');" alt="github icon">
+                <img class="nav-social-icon" src="images/icons/socials/linkedin-icon.png" onclick="redirectLink('https://www.linkedin.com/in/kaan-saçma/')" onmouseover="hover(this, 'images/icons/socials/linkedin-icon-orange.png');" onmouseout="unhover(this, 'images/icons/socials/linkedin-icon.png');" alt="linkedin icon">
+            </div>
+            <div class="nav-theme">
+                <img class="nav-theme-icon sun" src="images/icons/theme/sun-icon.png" onclick="changeTheme('light')" onmouseover="hover(this, 'images/icons/theme/sun-icon-orange.png')" onmouseout="unhover(this, 'images/icons/theme/sun-icon.png')" alt="Theme Sun Icon">
+                <img class="nav-theme-icon moon" src="images/icons/theme/moon-icon.png" onclick="changeTheme('dark')" onmouseover="hover(this, 'images/icons/theme/moon-icon-orange.png')" onmouseout="unhover(this, 'images/icons/theme/moon-icon.png')" alt="Theme Moon Icon">
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section id="home" class="scroll">
+            <div class="home-container">
+                <div class="home-content">
+                    <p>I'm <a class="bold blue">Kaan Saçma</a></p>
+                    <p>A <a class="orange">computer engineer</a> and <a class="orange">full stack</a> developer,</p>
+                    <p>passionate about <a class="purple">web</a> and <a class="purple">game</a> development.</p>
+                    <div class="home-interactions">
+                        <a class="home-btn" onclick="displayLangChoice()">My Resume</a>
+                        <a class="home-btn" onclick="scrollToId('contact')">Contact Me</a>
+                        <div class="home-lang-div">
+                            <ul class="home-lang-list">
+                                <li class="home-lang-resume" onclick="redirectLink('resumes/Kaan Saçma Resume.pdf')">English</li>
+                                <li class="home-lang-resume" onclick="redirectLink('resumes/CV Kaan Sacma.pdf')">French</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/icons/kaan-icon.png" alt="Kaan Saçma">
             </div>
         </section>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Kaan Saçma</a>
-                <div class="d-flex align-items-center d-lg-none">
-                    <a class="custom-btn btn" href="#section_5">
-                        Contact me
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Knowledge</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <a class="custom-btn btn" href="#section_5">
-                            Contact me
-                        </a>
+        <section id="about" class="scroll">
+            <div class="about-container">
+                <h1 class="about-title">About Me</h1>
+                <article class="about-card">
+                    <div class="about-card-title">
+                        <h2>Who am I?</h2>
                     </div>
-                </div>
+                    <div class="about-card-content">
+                        <p>I am <a class="blue">Kaan</a>, a 21-year-old tech enthusiast based in Brussels, Belgium.</p>
+                        <p>Soon to graduate from <a onclick="redirectLink('https://www.epitech-it.be/en/')" class="blue underline pointer">Epitech Brussels</a>, I am driven by curiosity and a passion for innovation.</p>
+                        <p>My journey is one of continuous growth, fueled by an insatiable quest for knowledge and understanding.</p>
+                    </div>
+                </article>
+                <article class="about-card">
+                    <div class="about-card-title">
+                        <h2>What do I like?</h2>
+                    </div>
+                    <div class="about-card-content">
+                        <p>I love immersing myself in the <a class="purple">worlds of manga</a> and <a class="purple">anime</a>, especially One Piece.</p>
+                        <p>When I'm not exploring these stories, you'll find me <a class="purple">walking in the park</a> or dreaming of my next <a class="purple">travel adventure</a>.</p>
+                        <p><a class="purple">Video games</a> are another passion of mine—I enjoy both playing and creating them in my spare time. </p>
+                        <p>Additionally, I am fascinated by <a class="purple">new technologies</a> and love diving deep into learning and discovering their potential.</p>
+                    </div>
+                </article>
+                <article class="about-card">
+                    <div class="about-card-title">
+                        <h2>What have I already done?</h2>
+                    </div>
+                    <div class="about-card-content">
+                        <p>I have completed two internships where I honed my skills in <a class="orange">web development</a>, both <a class="orange">front end</a> and <a class="orange">back end</a>.</p>
+                        <p>During this time, I created a modular quiz website, animated a web page, and contributed to the <a class="orange">backend development</a> of a mobile app.</p>
+                        <p>To further my skills, I participated in several game jams, constantly pushing myself to learn more and improve.</p>
+                        <p>This portfolio reflects a blend of technical expertise and creativity, showcasing projects that I've worked on.</p>
+                    </div>
+                </article>
             </div>
-        </nav>
+        </section>
 
-        <main>
-            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7 col-12">
-                            <div class="hero-text">
-                                <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                    <img src="images/moi.jpeg" class="avatar-image avatar-image-large img-fluid" alt="">
-                                    <h1 class="hero-title ms-3 mb-0">Hello!</h1>
-                                </div>
-                                <h2 class="mb-4">I’m open to work.</h2>
-                                <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-12 position-relative">
-                            <div class="hero-image-wrap"></div>
-                            <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" class="hero-image img-fluid" alt="">
+        <section id="experience" class="scroll">
+            <div class="experience-container">
+                <h1 class="experience-title">Experience</h1>
+                <div class="experience-timeline">
+                    <div class="experience-timeline-date-right"><a>Feb 2024 - Jul 2024</a></div>
+                    <div class="experience-timeline-middle">
+                        <div class="experience-timeline-circle"></div>
+                    </div>
+                    <div class="experience-timeline-component experience-timeline-content">
+                        <img class="experience-timeline-icon" src="images/icons/companies/caprasolutions-icon.jpeg" onclick="redirectLink('https://capra.solutions/')" alt="Capra Solutions Icon">
+                        <h3 class="experience-timeline-company">Capra Solutions</h3>
+                        <h4 class="experience-timeline-role orange">Full Stack Developer</h4>
+                        <ul class="experience-timeline-task">
+                            <li>Creation of a mobile application with <a class="orange">Ionic</a> + <a class="orange">Vue.js</a>.</li>
+                            <li>Creation of API routes with <a class="orange">Node.js</a>.</li>
+                            <li>Design and implementation of database models with <a class="orange">MongoDB</a>.</li>
+                        </ul>
+                        <div class="experience-labels">
+                            <a class="experience-label">Ionic</a>
+                            <a class="experience-label">Vue.js</a>
+                            <a class="experience-label">CSS</a>
+                            <a class="experience-label">Node.js</a>
+                            <a class="experience-label">MongoDB</a>
                         </div>
                     </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#535da1" fill-opacity="1" d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
-            </section>
-
-            <section class="about section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0 mx-auto">
-                            <div class="about-thumb">
-                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                                    <h2 class="text-white me-4 mb-0">My Story</h2>
-                                    <img src="images/moi.jpeg" class="avatar-image img-fluid" alt="">
-                                </div>
-                                <h3 class="pt-2 mb-3">A little bit about myself</h3>
-                                <p>I'm Kaan Saçma.</p>
-                                <p>I am a computer engineering student at <a href="https://www.epitech-it.be/en/" target="_blank">{Epitech} Brussels</a>, passionate about web development and game development.</p>
-                                <p>I have skills in front-end (React, React-Native, Vue3) and back-end (Node.js).</p>
-                                <p>I have knowledge in C, C++ and JavaScript</p>
-                                <p>I am currently seeking exciting opportunities to contribute to innovative projects.</p>
-                            </div>
+                    <div class="experience-timeline-component experience-timeline-content">
+                        <img class="experience-timeline-icon" src="images/icons/companies/puilaetco-icon.jpeg" onclick="redirectLink('https://www.puilaetco.be/fr-be/')" alt="Puilaetco Private Bank Icon">
+                        <h3 class="experience-timeline-company">Puilaetco Private Bank</h3>
+                        <h4 class="experience-timeline-role orange">KYC Student</h4>
+                        <ul class="experience-timeline-task">
+                            <li>Customer <a class="orange">data research</a>.</li>
+                            <li>Sorting data.</li>
+                            <li>Updating the database.</li>
+                        </ul>
+                        <div class="experience-labels">
+                            <a class="experience-label">Advanced Google Search</a>
+                            <a class="experience-label">Database</a>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="featured section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <div class="profile-thumb">
-                                <div class="profile-title">
-                                    <h4 class="mb-0">Information</h4>
-                                </div>
-                                <div class="profile-body">
-                                    <p>
-                                        <span class="profile-small-title">Name</span>
-                                        <span>Kaan Saçma</span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Birthday</span>
-                                        <span>June 24, 2002</span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Phone</span>
-                                         <span><a href="tel:+32483683031">+32 483 683 031</a></span>
-                                    </p>
-                                    <p>
-                                        <span class="profile-small-title">Email</span>
-                                        <span><a href="mailto:kaansacma@gmail.com">kaansacma@gmail.com</a></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="experience-timeline-middle">
+                        <div class="experience-timeline-circle"></div>
                     </div>
-                </div>
-            </section>
-
-            <section class="clients section-padding">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 col-12">
-                            <h3 class="text-center mb-5">Companies I've worked for</h3>
-                        </div>
-                        <div class="row row-cols-auto justify-content-center">
-                            <div class="clients-item-height">
-                                <a href="https://www.evo-agency.eu/en">
-                                    <img src="images/works/evo-group.svg" class="clients-image img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="mt-2">
-                                <a href="https://www.puilaetco.be/fr-be/">
-                                    <img src="images/works/puilaetco.svg" class="clients-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
+                    <div class="experience-timeline-date-left">Aug 2023 - Aug 2023</div>
+                    <div class="experience-timeline-date-right">Aug 2022 - Nov 2022</div>
+                    <div class="experience-timeline-middle">
+                        <div class="experience-timeline-circle"></div>
                     </div>
-                </div>
-            </section>
-
-            <section class="services section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt="">
-                                <h2 class="text-white ms-4 mb-0">Knowledge</h2>
-                            </div>
-                            <div class="row pt-lg-5 mt-lg-5">
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Languages</h3>
-                                        </div>
-                                        <p>C</p>
-                                        <p>C++</p>
-                                        <p>Js</p>
-                                        <p>Python</p>
-                                        <p>Rust</p>
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-globe2"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Frameworks</h3>
-                                        </div>
-                                        <p>React</p>
-                                        <p>React-Native</p>
-                                        <p>Vue3</p>
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-command"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-12 mt-auto">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Operating System</h3>
-                                        </div>
-                                        <p>Windows</p>
-                                        <p>Macos</p>
-                                        <p>Ubuntu</p>
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-cpu"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <div class="services-thumb services-thumb-up">
-                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                            <h3 class="mb-0">Tools</h3>
-                                        </div>
-                                        <p>Github</p>
-                                        <p>Jetbrains IDE</p>
-                                        <p>Visual Studio Code</p>
-                                        <p>Microsoft Office</p>
-                                        <p>Notion</p>
-                                        <p>Trello</p>
-                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                            <i class="services-icon bi-tools"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="projects section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-                                <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
-
-                                <h2 class="text-white ms-4 mb-0">Projects</h2>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Python</small>
-                                    <h3 class="projects-title">Youtube Channel Video Downloader</h3>
-                                </div>
-                                <a href="https://github.com/KaanSacma/channel-video-downloader">
-                                    <img src="images/projects/youtube.png" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">C</small>
-                                    <h3 class="projects-title">Minishell</h3>
-                                </div>
-                                <a href="https://github.com/KaanSacma/Minishell1-2021-2022">
-                                    <img src="images/projects/minishell.png" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact section-padding" id="section_5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-8 col-12">
-                                <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                    <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt="">
-                                    <h2 class="text-white ms-4 mb-0">Contact me</h2>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
-                                <div class="contact-info contact-info-border-start d-flex flex-column">
-                                    <strong class="site-footer-title d-block mt-4 mb-3">My Links</strong>
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item"><a href="https://www.linkedin.com/in/kaan-saçma/" class="social-icon-link bi-linkedin"></a></li>
-                                        <li class="social-icon-item"><a href="https://github.com/KaanSacma" class="social-icon-link bi-github"></a></li>
-                                    </ul>
-                                    <strong class="site-footer-title d-block mt-4 mb-3">Status</strong>
-                                    <p class="mb-0">I’m open to work</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
-                                <div class="contact-info d-flex flex-column">
-                                    <strong class="site-footer-title d-block mb-3">About Me</strong>
-                                    <p class="mb-2">
-                                        I'm currently studying at <a href="https://www.epitech-it.be/en/" target="_blank">{Epitech} Brussels</a> in Belgium.
-                                    </p>
-                                    <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
-                                    <p>
-                                        <a href="mailto:kaansacma@gmail.com">
-                                            kaansacma@gmail.com
-                                        </a>
-                                    </p>
-
-                                    <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
-
-                                    <p class="mb-0">
-                                        <a href="tel:+32483683031">
-                                            +32 483 683 031
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                                <form action="mailto:kaansacma@gmail.com?subject=subject&body=body" method="get" class="custom-form contact-form" role="form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="form-floating">
-                                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required="">
-                                                <label for="floatingInput">Subject</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control" id="body" name="body" placeholder="Content"></textarea>
-                                                <label for="floatingTextarea">Content</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-12 ms-auto">
-                                            <button type="submit" class="form-control">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        <div class="copyright-text-wrap">
-                            <p class="mb-0">
-                                <span class="copyright-text">Copyright © 2023 <a href="#">First Portfolio</a> Company. All rights reserved.</span>
-                                Design:
-                                <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                            </p>
+                    <div class="experience-timeline-component experience-timeline-content">
+                        <img class="experience-timeline-icon" src="images/icons/companies/evogroup-icon.jpeg" onclick="redirectLink('https://www.evo.group/')" alt="Evo Group Icon">
+                        <h3 class="experience-timeline-company">Evo Group</h3>
+                        <h4 class="experience-timeline-role orange">Front-end Developer</h4>
+                        <ul class="experience-timeline-task">
+                            <li>Creation of a modular quiz website using <a class="orange">Vue3</a>.</li>
+                            <li>Adding animation with <a class="orange">GSAP3</a>.</li>
+                            <li>Applying design with <a class="orange">CSS</a>/<a class="orange">SCSS</a>.</li>
+                        </ul>
+                        <div class="experience-labels">
+                            <a class="experience-label">Vue3</a>
+                            <a class="experience-label">HTML</a>
+                            <a class="experience-label">CSS/SCSS</a>
+                            <a class="experience-label">JS</a>
+                            <a class="experience-label">GSAP3</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+        <section id="work" class="scroll">
+            <div class="work-container">
+                <h1 class="work-title">Work</h1>
+                <div class="work-projects">
+                    <article class="work-project game">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/ScaredForScarcity.png" class="work-static-image" alt="Scared Fir Scarcity Thumbnail">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="Scared Fir Scarcity Gif">
+                        </div>
+                        <p class="work-project-desc orange">Game Jam</p>
+                        <p class="work-project-title">Scared For Scarcity</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">Game</a>
+                                <a class="work-project-label">Unreal Engine</a>
+                                <a class="work-project-label">Blueprint</a>
+                                <a class="work-project-label">C++</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/Scared-For-Scarcity" target="_blank">Github</a>
+                                <a class="work-project-button" href="https://kaansacma.itch.io/scared-for-scarcity" target="_blank">Itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-project game">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/SpookCooked.png" class="work-static-image" alt="">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="">
+                        </div>
+                        <p class="work-project-desc orange">Game Jam</p>
+                        <p class="work-project-title">Spookcooked</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">Game</a>
+                                <a class="work-project-label">Unreal Engine</a>
+                                <a class="work-project-label">Blueprint</a>
+                                <a class="work-project-label">C++</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/Spookcooked" target="_blank">Github</a>
+                                <a class="work-project-button" href="https://kaansacma.itch.io/spookcooked" target="_blank">Itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-project game">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/TechnoCrusade.png" class="work-static-image" alt="Techno Crusade Thumbnail">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="Techno Crusade Gif">
+                        </div>
+                        <p class="work-project-desc orange">Game Jam</p>
+                        <p class="work-project-title">Techno Crusade</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">Game</a>
+                                <a class="work-project-label">Unity</a>
+                                <a class="work-project-label">C#</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/Techno-Crusade" target="_blank">Github</a>
+                                <a class="work-project-button" href="https://kaansacma.itch.io/techno" target="_blank">Itch.io</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-project app">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/CGLauncher.png" class="work-static-image" alt="Techno Crusade Thumbnail">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="Techno Crusade Gif">
+                        </div>
+                        <p class="work-project-desc orange">Personal Project</p>
+                        <p class="work-project-title">CG Launcher</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">App</a>
+                                <a class="work-project-label">Tauri</a>
+                                <a class="work-project-label">Vue.js</a>
+                                <a class="work-project-label">JS</a>
+                                <a class="work-project-label">CSS</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/CGLauncher" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-project other">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/ChannelVideoDownloader.png" class="work-static-image" alt="Techno Crusade Thumbnail">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="Techno Crusade Gif">
+                        </div>
+                        <p class="work-project-desc orange">Personal Project</p>
+                        <p class="work-project-title">Channel Video Downloader</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">Script</a>
+                                <a class="work-project-label">Python</a>
+                                <a class="work-project-label">FFMPEG</a>
+                                <a class="work-project-label">PyTube</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/channel-video-downloader" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-project other">
+                        <div class="work-image-container">
+                            <img src="images/thumbs/Minishell.png" class="work-static-image" alt="Techno Crusade Thumbnail">
+                            <img src="images/gifs/test.gif" class="work-hover-image" alt="Techno Crusade Gif">
+                        </div>
+                        <p class="work-project-desc orange">School Project</p>
+                        <p class="work-project-title">Minishell</p>
+                        <div class="work-project-details">
+                            <div class="work-project-labels">
+                                <a class="work-project-label"><img src="images/icons/windows-icon.png" alt="windows">Script</a>
+                                <a class="work-project-label">C</a>
+                            </div>
+                            <div class="work-project-buttons">
+                                <a class="work-project-button" href="https://github.com/KaanSacma/Minishell1-2021-2022" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll">
+            <div class="skills-container">
+                <h1 class="skills-title">Skills</h1>
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Web Development</h3>
+                    <div class="skills-card-list">
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/html-icon.png" alt="HTML">
+                            <a>HTML</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/css-icon.png" alt="CSS">
+                            <a>CSS</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/js-icon.png" alt="JS">
+                            <a>JavaScript</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/vue-icon.png" alt="Vue">
+                            <a>Vue.js</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/ionic-icon.png" alt="Ionic">
+                            <a>Ionic</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/react-icon.png" alt="React">
+                            <a>React</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/nodejs-icon.png" alt="Node.js">
+                            <a>Node.js</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/mongodb-icon.png" alt="MongoDB">
+                            <a>MongoDB</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/gsap3-icon.png" alt="GSAP3">
+                            <a>GSAP3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Computer Languages</h3>
+                    <div class="skills-card-list">
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/c-icon.png" alt="C">
+                            <a>C</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/cpp-icon.png" alt="CPP">
+                            <a>C++</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/csharp-icon.png" alt="C#">
+                            <a>C#</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/python-icon.png" alt="Python">
+                            <a>Python</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/rust-icon.png" alt="Rust">
+                            <a>Rust</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/technologies/haskell-icon.png" alt="Haskell">
+                            <a>Haskell</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Tools</h3>
+                    <div class="skills-card-list">
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/github-icon.png" alt="Github">
+                            <a>Github</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/notion-icon.png" alt="Notion">
+                            <a>Notion</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/trello-icon.png" alt="Trello">
+                            <a>Trello</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/clickup-icon.png" alt="Clickup">
+                            <a>ClickUp</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/miro-icon.png" alt="Miro">
+                            <a>Miro</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/jetbrains-icon.png" alt="Jetbrains">
+                            <a>Jetbrains</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/vscode-icon.png" alt="VSCode">
+                            <a>VSCode</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/unreal-engine-icon.png" alt="Unreal Engine">
+                            <a>UE</a>
+                        </div>
+                        <div class="skills-card-icon">
+                            <img src="images/icons/tools/unity-icon.png" alt="Unity">
+                            <a>Unity</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll">
+            <div class="contact-container">
+                <h1 class="contact-title">Contact</h1>
+                <form id="contact-form">
+                    <label class="contact-label">
+                        <input type="text" name="user_name" placeholder="Name">
+                    </label>
+                    <label class="contact-label">
+                        <input type="email" name="user_email" placeholder="Email">
+                    </label>
+                    <label class="contact-label">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </label>
+                    <input id="submit" type="submit" value="Send">
+                    <p id="mail-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
