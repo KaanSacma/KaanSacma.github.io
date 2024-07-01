@@ -33,3 +33,16 @@
 .about-card-content p {
     margin-top: 10px;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .about-card {
+        padding: 20px 0;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .about-card-content p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

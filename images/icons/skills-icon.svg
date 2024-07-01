@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-6.82121e-13,-1083)">
+        <g id="Skills" transform="matrix(1.21951,0,0,0.842697,-1460.98,957.438)">
+            <rect x="1198" y="149" width="246" height="356" style="fill:none;"/>
+            <g id="star" transform="matrix(3.41667,0,0,4.94444,258.417,-1190.94)">
+                <path d="M311,278.026L322,297L341,300L328,314L329,336L311,327L293,336L294,314L281,300L300,297L311,278.026Z" style="fill-rule:nonzero;"/>
+                <path d="M311,328L329,336L311,310L311,328Z" style="fill-rule:nonzero;"/>
+                <path d="M311,310L329,336L329,314L311,310Z" style="fill-rule:nonzero;"/>
+                <path d="M329,314L341,300L311,310L329,314Z" style="fill-rule:nonzero;"/>
+                <path d="M311,310L341,300L323,296L311,310Z" style="fill-rule:nonzero;"/>
+                <path d="M299,296L311,310L311,278.026L299,296Z" style="fill-rule:nonzero;"/>
+                <path d="M323,296L311.018,278L311,278.026L311,310L323,296Z" style="fill-rule:nonzero;"/>
+                <path d="M293,314L293,336L311,310L293,314Z" style="fill-rule:nonzero;"/>
+                <path d="M293,336L311,328L311,310L293,336Z" style="fill-rule:nonzero;"/>
+                <path d="M281,300L293,314L311,310L281,300Z" style="fill-rule:nonzero;"/>
+                <path d="M299,296L281,300L311,310L299,296Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

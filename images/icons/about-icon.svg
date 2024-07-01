@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="About" transform="matrix(1.21951,0,0,0.842697,-1460.98,-125.562)">
+        <rect x="1198" y="149" width="246" height="356" style="fill:none;"/>
+        <g transform="matrix(0.82,0,0,1.18667,237.78,-51.3489)">
+            <g id="person" transform="matrix(4.16667,0,0,4.16667,-433.167,-1368.67)">
+                <rect x="414" y="401" width="14" height="15" style="fill-rule:nonzero;"/>
+                <path d="M428,434L414,434L414,410L421,417L428,410L428,434Z" style="fill-rule:nonzero;"/>
+                <path d="M435,395C435,397 434,399 433,399C432,399 431,397 431,395C431,393 432,391 433,391C434,391 435,393 435,395Z" style="fill-rule:nonzero;"/>
+                <path d="M411,395C411,397 410,399 409,399C408,399 407,397 407,395C407,393 408,391 409,391C410,391 411,393 411,395Z" style="fill-rule:nonzero;"/>
+                <path d="M433,393C433,401.284 427.627,410 421,410C414.373,410 409,401.284 409,393C409,384.716 414.373,380 421,380C427.627,380 433,384.716 433,393Z" style="fill-rule:nonzero;"/>
+                <path d="M432,383C432,388 426,389 421,389C416,389 410,388 410,383C410,378 414.925,376 421,376C427.075,376 432,378 432,383Z" style="fill-rule:nonzero;"/>
+                <path d="M412,385C412,388.866 409,394 409,394L409,387C409,383.134 409.896,380 411,380C412.104,380 412,381.134 412,385Z" style="fill-rule:nonzero;"/>
+                <path d="M430,385C430,388.866 433,394 433,394L433,387C433,383.134 432.104,380 431,380C429.896,380 430,381.134 430,385Z" style="fill-rule:nonzero;"/>
+                <path d="M392,434C392.267,431.334 392.733,414 404,414L414,410L414,434L392,434Z" style="fill-rule:nonzero;"/>
+                <path d="M450,434C450,434 449,414 438,414L428,410L428,434L450,434Z" style="fill-rule:nonzero;"/>
+                <path d="M421,430L414,410L421,415L428,410L421,430Z" style="fill-rule:nonzero;"/>
+                <path d="M440,426L437,434L440,434L440,426Z" style="fill-rule:nonzero;"/>
+                <path d="M402,426L405,434L402,434L402,426Z" style="fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(1.53333,0,0,2.43902,1172.77,-216.431)">
+                <path d="M115.696,228L117,269L77,269L77.652,228L115.696,228Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

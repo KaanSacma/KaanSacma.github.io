@@ -25,6 +25,7 @@
 
 #contact-form p {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .contact-label {
@@ -85,4 +86,19 @@
 .contact-error {
     color: red;
     font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #contact-form {
+        width: 300px;
+        padding: 0;
+    }
+
+    .contact-label > input, textarea {
+        min-width: 200px;
+    }
+
+    #submit {
+        min-width: 250px;
+    }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-1445)">
+        <g id="Contact" transform="matrix(1.21951,0,0,0.842697,-1460.98,1319.44)">
+            <rect x="1198" y="149" width="246" height="356" style="fill:none;"/>
+            <g id="envelope" transform="matrix(3.41667,0,0,4.94444,641.083,-231.722)">
+                <path d="M231,134C231,135.1 230.1,136 229,136L169,136C167.9,136 167,135.1 167,134L167,96C167,94.9 167.9,94 169,94L229,94C230.1,94 231,94.9 231,96L231,134Z" style="fill-rule:nonzero;"/>
+                <path d="M231,130C231,131.1 230.1,132 229,132L169,132C167.9,132 167,131.1 167,130L167,92C167,90.9 167.9,90 169,90L229,90C230.1,90 231,90.9 231,92L231,130Z" style="fill-rule:nonzero;"/>
+                <path d="M200.576,113.769C199.709,114.446 198.291,114.446 197.424,113.769L168.576,91.232C167.709,90.555 167.9,90 169,90L229,90C230.1,90 230.291,90.555 229.424,91.232L200.576,113.769Z" style="fill:rgb(74,74,74);fill-rule:nonzero;"/>
+                <path d="M200.672,109.903C199.752,110.506 198.248,110.506 197.328,109.903L168.672,91.098C167.752,90.494 167.9,90 169,90L229,90C230.1,90 230.248,90.494 229.328,91.098L200.672,109.903Z" style="fill:rgb(74,74,74);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

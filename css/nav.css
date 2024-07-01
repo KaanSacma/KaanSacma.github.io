@@ -49,6 +49,12 @@
     margin-right: 10px;
 }
 
+.nav-btn-minimal {
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
 .nav-social-icon {
     width: 40px;
     height: 40px;
@@ -76,4 +82,54 @@
 
 .nav-theme-icon .moon, .sun {
     display: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .nav-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-btn-minimal {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .nav-btn-minimal:nth-child(6) {
+        margin-left: -10px;
+    }
+
+    .nav-btn-minimal:last-child {
+        margin-right: 0;
+    }
+
+    .nav-social {
+        margin-right: 0;
+        right: 40px;
+    }
+
+    .nav-social-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-theme-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-theme {
+        margin-right: 5px;
+    }
 }

@@ -89,3 +89,10 @@ section h1:first-child {
     font-size: 60px;
     font-weight: bold;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    main {
+        width: 100%;
+    }
+}

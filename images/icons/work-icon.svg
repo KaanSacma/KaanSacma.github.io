@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-6.82121e-13,-722)">
+        <g id="Work" transform="matrix(1.21951,0,0,0.842697,-1460.98,596.438)">
+            <rect x="1198" y="149" width="246" height="356" style="fill:none;"/>
+            <g id="briefcase" transform="matrix(3.41667,0,0,4.94444,255,-1690.33)">
+                <path d="M342,431C342,433.2 340.2,435 338,435L286,435C283.8,435 282,433.2 282,431L282,397C282,394.8 283.8,393 286,393L338,393C340.2,393 342,394.8 342,397L342,431Z" style="fill-rule:nonzero;"/>
+                <path d="M342,427C342,429.2 340.2,431 338,431L286,431C283.8,431 282,429.2 282,427L282,399C282,396.8 283.8,395 286,395L338,395C340.2,395 342,396.8 342,399L342,427Z" style="fill-rule:nonzero;"/>
+                <path d="M342,407C342,410 339,413 336,413L288,413C285,413 282,410 282,407L282,395C282,392.8 283.8,391 286,391L338,391C340.2,391 342,392.8 342,395L342,407Z" style="fill-rule:nonzero;"/>
+                <path d="M342,405C342,408 339,411 336,411L288,411C285,411 282,408 282,405L282,393C282,390.8 283.8,389 286,389L338,389C340.2,389 342,390.8 342,393L342,405Z" style="fill-rule:nonzero;"/>
+                <rect x="322" y="407" width="6" height="6" style="fill-rule:nonzero;"/>
+                <rect x="322" y="413" width="6" height="2" style="fill-rule:nonzero;"/>
+                <rect x="296" y="407" width="6" height="6" style="fill-rule:nonzero;"/>
+                <rect x="296" y="413" width="6" height="2" style="fill-rule:nonzero;"/>
+                <path d="M323,381L301,381C299.9,381 299,381.9 299,383L299,386C299,386.55 299.9,387 301,387C302.1,387 303,386.55 303,386C303,385.45 303.9,385 305,385L319,385C320.1,385 321,385.45 321,386C321,386.55 321.9,387 323,387C324.1,387 325,386.55 325,386L325,383C325,381.9 324.1,381 323,381Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

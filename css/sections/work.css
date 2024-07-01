@@ -77,18 +77,22 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     overflow-x: hidden;
     width: 100%;
     margin-top: 10px;
+    gap: 5px;
 }
 
 .work-project-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--orange-color);
     color: var(--text-label-color);
     border-radius: 5px;
     font-weight: bold;
     padding: 2px 5px;
-    margin-right: 5px;
 }
 
 .work-project-label:last-child {
@@ -128,4 +132,15 @@
 .work-project-button:hover {
     background-color: var(--orange-color);
     color: var(--text-label-color);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .work-project {
+        width: 0;
+        min-width: 250px;
+    }
+
+    .work-project-title {
+        font-size: 20px !important;
+    }
 }
